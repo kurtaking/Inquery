@@ -4,7 +4,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -13,8 +12,8 @@
 
     <!-- HTML -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link href="{% static 'inquery/css/bootstrap.css' %}" rel="stylesheet">
-    <link href="{% static 'inquery/css/mdb.min.css' %}" rel="stylesheet">
+    <link href="{% static 'inquery/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'inquery/css/sidebar.css' %}" rel="stylesheet">
     <link href="{% static 'inquery/css/styles.css' %}" rel="stylesheet">
 
     {% block html %}{% endblock %}
@@ -22,22 +21,37 @@
 </head>
 
 <body>
+  <div id="wrapper">
 
     <header>
+      {% include 'widgets/sidenav.html' %}
     </header>
 
     <main>
-      {% block content %}{% endblock %}
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+          {% include 'widgets/navbar.html' %}
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-xs-12">
+
+                      {% block content %}{% endblock %}
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- /#page-content-wrapper -->
     </main>
 
     <footer>
     </footer>
+  </div>
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="{% static 'inquery/js/jquery-2.2.3.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'inquery/js/tether.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'inqueryjs/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'inqueryjs/mdb.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'inquery/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'inquery/js/init.js' %}"></script>
 
     {% block javascript %}{% endblock %}
 
