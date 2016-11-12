@@ -25,4 +25,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', auth_views.login, name='login', kwargs={'redirect_authenticated_user': True}),
     url(r'^login/$', auth_views.login, name='login', kwargs={'redirect_authenticated_user': True}),
+    url(r'^dashboard/$', views.dashboard, name='dashboard'),
+    url(r'^category/$', views.category, name='category'),
+    url(r'^flash_card/$', views.flash_card, name='flash_card'),
 ]

@@ -2,6 +2,16 @@ body {
     overflow-x: hidden;
 }
 
+.sidebar-hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #fff;
+    background-color: #fff;
+    margin: 1em 0;
+    padding: 0;
+}
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -22,7 +32,7 @@ body {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #355c7d;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -63,7 +73,7 @@ body {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #f8b195;
 }
 
 .sidebar-nav li a:hover {
@@ -78,13 +88,13 @@ body {
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
+    height: 60px;
+    font-size: 26px;
     line-height: 60px;
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+    color: #f67280;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
