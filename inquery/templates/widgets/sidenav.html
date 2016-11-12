@@ -4,14 +4,15 @@
         <li class="sidebar-brand">
             <a href="{% url 'login' %}">InQuery</a>
         </li>
+        <hr class="sidebar-hr">
         <li>
-            <a href="#">Dashboard</a>
+            <a href="{% url 'dashboard' %}">Dashboard</a>
         </li>
         <li>
-            <a href="#">Category</a>
+            <a href="{% url 'category' %}">Categories</a>
         </li>
         <li>
-            <a href="#">FlashCard</a>
+            <a href="{% url 'flash_card' %}">FlashCard</a>
         </li>
 
     </ul>
