@@ -23,5 +23,6 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index, name='index'),
+    url(r'^$', auth_views.login, name='login', kwargs={'redirect_authenticated_user': True}),
+    url(r'^login/$', auth_views.login, name='login', kwargs={'redirect_authenticated_user': True}),
 ]
