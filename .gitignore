@@ -1,0 +1,13 @@
+### OSX template
+.DS_Store
+
+### PyCharm/Python
+*.pyc
+*.swp
+.idea/*
+__pycache__/
+/out/
+
+### Virtual Env
+venv
+env
