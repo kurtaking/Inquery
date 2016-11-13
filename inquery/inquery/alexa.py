@@ -15,6 +15,8 @@ def LaunchRequest(**kwargs):
     load
     begin
     """
+    print("Make it here")
+
     return ResponseBuilder.create_response(message="Welcome.",
                                            reprompt="What would you like to do next?",
                                            end_session=False)
@@ -27,6 +29,7 @@ def CancelIntent(**kwargs):
     ---
     cancel
     """
+    print("Make it here")
     return ResponseBuilder.create_response(message="Canceling actions not configured!",
                                            reprompt="What would you like to do next?",
                                            end_session=False)
@@ -41,6 +44,7 @@ def StopIntent(**kwargs):
     end
     nevermind
     """
+    print("Make it here")
     return ResponseBuilder.create_response(message="Stopping actions not configured!")
 
 
@@ -53,6 +57,7 @@ def HelpIntent(**kwargs):
     info
     information
     """
+    print("Make it here")
     return ResponseBuilder.create_response(message="No help was configured!")
 
 
@@ -63,4 +68,5 @@ def SessionEndedRequest(**kwargs):
     ---
     quit
     """
+    print("Make it here")
     return ResponseBuilder.create_response()

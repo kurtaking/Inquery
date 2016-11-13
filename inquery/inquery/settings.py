@@ -25,13 +25,12 @@ SECRET_KEY = '#s@%ejmbs(6*ipn%-07*33f8@hj#xxyf%xj7%jdl)9o0a2yq^0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'inquery-env.2rtimdqkit.us-west-2.elasticbeanstalk.com'
-]
+ALLOWED_HOSTS = ["33055603.ngrok.io"]
 
 #Alexa APP id from developer.amazon.com
 ALEXA_APP_ID_DEFAULT= "amzn1.ask.skill.9b71543f-5291-40ff-adeb-26d5718cd3d9"
-ALEXA_REQUEST_VERIFICATON=True
+ALEXA_APP_ID_OTHER= "amzn1.ask.skill.9b71543f-5291-40ff-adeb-26d5718cd3d9"
+ALEXA_REQUEST_VERIFICATON=False
 
 # Decides where the login/logout urls redirect to
 LOGIN_REDIRECT_URL = '/dashboard'
@@ -41,7 +40,10 @@ LOGOUT_REDIRECT_URL = '/login'
 
 # Application definition
 
+
 INSTALLED_APPS = [
+    'django_alexa',
+    'rest_framework',
     'inquery.apps.InqueryConfig',
     'django.contrib.admin',
     'django.contrib.auth',
