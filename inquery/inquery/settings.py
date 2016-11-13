@@ -29,6 +29,10 @@ ALLOWED_HOSTS = [
     'inquery-env.2rtimdqkit.us-west-2.elasticbeanstalk.com'
 ]
 
+#Alexa APP id from developer.amazon.com
+ALEXA_APP_ID_DEFAULT= "amzn1.ask.skill.9b71543f-5291-40ff-adeb-26d5718cd3d9"
+ALEXA_REQUEST_VERIFICATON=True
+
 # Decides where the login/logout urls redirect to
 LOGIN_REDIRECT_URL = '/dashboard'
 LOGIN_URL = '/login'
