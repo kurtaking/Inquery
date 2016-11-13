@@ -25,7 +25,9 @@ SECRET_KEY = '#s@%ejmbs(6*ipn%-07*33f8@hj#xxyf%xj7%jdl)9o0a2yq^0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'inquery-env.2rtimdqkit.us-west-2.elasticbeanstalk.com'
+]
 
 # Decides where the login/logout urls redirect to
 LOGIN_REDIRECT_URL = '/dashboard'
