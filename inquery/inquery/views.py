@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.contrib.auth import authenticate
 from django.http import HttpResponseRedirect, Http404, HttpRequest, HttpResponse
 import json
+from models import *
 
 
 def login(request):

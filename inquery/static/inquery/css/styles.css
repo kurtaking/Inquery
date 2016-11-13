@@ -1,0 +1,19 @@
+
+/*main {
+    margin-top: 75px;
+}
+
+@media (min-width: 768px) {
+    main {
+        margin-top: 25px;
+    }
+}*/
+
+
+h1 {
+    color: #6c5b7b !important;
+}
+
+.content {
+    margin-top: 25px;
+}
