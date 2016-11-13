@@ -1,31 +1,31 @@
 .inquery-blue-text {
-    color: #355c7d;
+    color: #355c7d !important;
 }
 .inquery-purple-text {
-    color: #6c5b7b;
+    color: #6c5b7b !important;
 }
 .inquery-light-purple-text {
-    color: #c06c84;
+    color: #c06c84 !important;
 }
 .inquery-pink-text {
-    color: #f67280;
+    color: #f67280 !important;
 }
 .inquery-tan-text {
-    color: #f8b195;
+    color: #f8b195 !important;
 }
 
 .inquery-blue-bg {
-    background-color: #355c7d;
+    background-color: #355c7d !important;
 }
 .inquery-purple-bg {
-    background-color: #6c5b7b;
+    background-color: #6c5b7b !important;
 }
 .inquery-light-purple-bg {
-    background-color: #c06c84;
+    background-color: #c06c84 !important;
 }
 .inquery-pink-bg {
-    background-color: #f67280;
+    background-color: #f67280 !important;
 }
 .inquery-tan-bg {
-    background-color: #f8b195;
+    background-color: #f8b195 !important;
 }
